@@ -15,14 +15,18 @@
 }
 
 body{
-    background: url("pattern.png");
+    background: url("/img/modern-futuristic-sci-fi-background.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 /* inicio de cabecera */
 
  
  .header{
-    background-color: black;
+    background-image: url(/img/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
     position: absolute;
     top: 0;
@@ -33,16 +37,6 @@ body{
     padding: 10px  120px;
     
 }
-
-.wrap{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 1250px;
-    margin: 0px auto;
-}
-
 
 .logo{
     width: 150px;
@@ -81,6 +75,24 @@ body{
     color: var(--colortext);
     font-size: 28px;
 }
+
+/* adaptacion a mobile  */
+
+@media (max-width:700px){
+    .header{
+        flex-direction: column;
+
+    }
+    .header .nav__link{
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+}
+
+
+/* fin de adaptaciona mobile  */
+
+/* final del header */
 
 
 /* inicio de banner  */
